@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>MD5 hash</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="bin/main.css">
+		<script src="bin/jquery.min.js"></script>
+		<script src="bin/md5.js"></script>
+		<script src="bin/main.js"></script>
+	</head>
+
+	<body>
+		<h1>MD5 калькулятор</h1>
+
+		<div class="card string">
+			<h2>Хэш строки</h2>
+			<input placeholder="Введите строку" class="source_input" type="text" id="string_input">
+			<p class="output" id="string_output"></p>
+		</div>
+
+		<div class="card file">
+			<h2>Хэш файла</h2>
+
+			<input class="source_input" type="file" id="file_input">
+
+			<p class="output" id="file_output"></p>
+
+			<p><input type="checkbox" id="cb_scheme">Я хочу проверить файл из схемы</p>
+			<input class="source_input hide" type="file" id="scheme_input">
+			<p class="output hide" id="scheme_output"></p>
+			<p class="output hide" id="comparison_output"></p>
+		</div>
+
+	</body>
+</html>
